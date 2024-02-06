@@ -2,7 +2,9 @@
 
 # Cythara Plus-Dynamic Meter-
 
-https://github.com/gstraube/cytharaを改良して作成した、管楽器用のチューナー＋音量調整練習用ツールのアプリです。
+https://github.com/gstraube/cythara
+↑の改良アプリケーションです。管楽器のチューニングができるようにモードを追加しました。
+また、ダイナミクス（音量表現）の練習に使用できるモードとしてデュナーミクメータモードを追加しました。
 
 [<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png"
       alt="Get it on F-Droid"
