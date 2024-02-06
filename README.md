@@ -1,7 +1,8 @@
 [![Build Status](https://travis-ci.org/gstraube/cythara.svg?branch=master)](https://travis-ci.org/gstraube/cythara)
 
-# Cythara
-A musical instrument tuner for Android.
+# Cythara Plus-Dynamic Meter-
+
+https://github.com/gstraube/cytharaを改良して作成した、管楽器用のチューナー＋音量調整練習用ツールのアプリです。
 
 [<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png"
       alt="Get it on F-Droid"
