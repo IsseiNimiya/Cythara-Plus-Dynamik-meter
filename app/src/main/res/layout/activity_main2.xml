@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="410dp"
+        android:layout_height="90dp"
+        android:text="チューナーモードに変更"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="209dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="440dp"
+        android:text="基準音量を設定"
+        app:layout_constraintBottom_toTopOf="@+id/RadioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.985"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="407dp"
+        android:layout_height="65dp"
+        android:text="録音準備！"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/RadioGroup"
+        android:layout_width="406dp"
+        android:layout_height="189dp"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button1"
+        app:layout_constraintVertical_bias="1.0">
+
+        <RadioButton
+            android:id="@+id/RadioButton1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ff" />
+
+        <RadioButton
+            android:id="@+id/RadioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="f" />
+
+        <RadioButton
+            android:id="@+id/RadioButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="mf" />
+
+        <RadioButton
+            android:id="@+id/RadioButton4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="mp" />
+
+        <RadioButton
+            android:id="@+id/RadioButton5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="p" />
+
+        <RadioButton
+            android:id="@+id/RadioButton6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="pp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="175dp"
+        android:text="ff"
+        android:textSize="75sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button1" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="92dp"
+        android:text="96"
+        android:textSize="78sp"
+        app:layout_constraintBottom_toTopOf="@+id/switch1"
+        app:layout_constraintEnd_toStartOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="92dp"
+        android:text="dB"
+        android:textSize="78sp"
+        app:layout_constraintBottom_toTopOf="@+id/switch1"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/SoundLevelBer"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="412dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/soundlevel_bg"
+        android:max="100"
+        android:progress="86"
+        android:progressDrawable="@drawable/progressbar"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="8dp"
+        android:text="  "
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/SoundLevelBer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/edit_BaseSoundLevel"
+        app:layout_constraintTop_toBottomOf="@+id/button1" />
+
+    <EditText
+        android:id="@+id/edit_BaseSoundLevel"
+        android:layout_width="180dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="30dp"
+        android:hint="手動入力用ボックス"
+        android:inputType="numberSigned|numberDecimal"
+        android:paddingLeft="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/SoundLevelBer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button1" />
+</androidx.constraintlayout.widget.ConstraintLayout>
