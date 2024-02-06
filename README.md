@@ -52,13 +52,6 @@ In chronological order:
 Thank you all!
 
 ## Screenshots
+![Providing feedback](/fastlane/metadata/android/en-US/phoneScreenshots/feedback2.png?raw=true)
 
-![Listening to input](/fastlane/metadata/android/en-US/phoneScreenshots/listening.png?raw=true)
-
-![Providing feedback](/fastlane/metadata/android/en-US/phoneScreenshots/feedback.png?raw=true)
-
-![Listing tunings](/fastlane/metadata/android/en-US/phoneScreenshots/tunings.png?raw=true)
-
-![Listing frequencies](/fastlane/metadata/android/en-US/phoneScreenshots/choose_frequency.png?raw=true)
-
-![Listing notations](/fastlane/metadata/android/en-US/phoneScreenshots/choose_notation.png?raw=true)
+![Providing dynamicMeter](/fastlane/metadata/android/en-US/phoneScreenshots/DynamicMeter.png?raw=true)
